@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼링크 태그</title>
+</head>
+<body>
+    <h1 id = 'top'>하이퍼 링크 태그</h1>
+    <!--
+        하이퍼링크 기능은 웹 문서가 다른 문서와 구분되는 가장 핵심적인 기능이다.
+        클릭을 통해 연결된 곳으로 이동하여 사용을 편리하게 해주는 기능으로
+        텍스트를 글릭해 이동하는 방법, 이미지를 클릭해 이동하는 방법 등이 존재한다.
+        또는 페이지 내에서 링크를 통한 이동동 가능하다.
+    -->
+    <h3>a 태그를 이용한 하이퍼링크 테스트</h3>
+    <ul>
+        <li><a href="05.미디어관련태그.html" target='_blank'>미디어관련 태그들1</a></li>
+        <li><a href="05.미디어관련태그.html" target='_blank'>미디어관련 태그들2</a></li>  
+     </ul>
+    
+     <h3>네트워크가 연결된 상황이라면 현재 서비스 되고 있는 웹 페이지도 링크가 가능하다</h3>
+     <ul>
+        <li><a href="https://www.naver.com/">네이버</a></li>
+        <li><a href="https://www.google.com/?hl=ko/">구글</a></li>
+     </ul>
+
+     <h3>img 태그를 이용해 링크 만들기</h3>
+     <a href='05.미디어관련태그.html'>
+     <img src='images/salad.jpg' width='1000px;' alt='미디어관련태그 페이지로 이동'></a>
+
+     <h3>한 페이지 내에서 점프하는 앵커 만들기</h3>
+     <ul>
+        <li>
+            <a href='#content1'>기사내용 1</a>
+        </li>
+        <li>
+            <a href='#content2'>기사내용 2</a>
+        </li>
+        <li>
+            <a href='#content3'>기사내용 3</a>
+        </li>
+        <li>
+            <a href='#content4'>기사내용 4</a>
+        </li>
+     </ul>
+
+     <h4 id = 'content1'>기사내용 1</h4>
+     <p>
+        Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum[d] exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? [D]Quis autem vel eum i[r]ure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? [33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+     </p>
+     <a href='#top'>맨위로 가기</a>
+     <h4 id = '#content2'>기사내용 2</h4>
+     <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu justo aliquet, auctor ex gravida, dignissim metus. Sed varius augue sapien, a dapibus justo posuere in. Nulla facilisis, nunc placerat accumsan aliquet, lacus urna mollis augue, vitae sodales lorem quam id lorem. Vivamus eu nibh elementum, pharetra mauris eu, feugiat eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus lacinia ligula, vel mollis nunc facilisis viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut at felis in enim fermentum sodales in vel lectus. Morbi sed faucibus lectus. Duis vehicula gravida ornare.
+     </p>
+     <a href='#top'>맨위로 가기</a>
+     <h4 id = '#content3'>기사내용 3</h4>
+     <p>
+        Nam rhoncus tellus luctus dui vestibulum porttitor. Nullam ante nibh, feugiat vel consectetur ut, malesuada eu leo. Quisque suscipit est vitae ante aliquet, in lobortis neque pretium. Nam efficitur vulputate lacus feugiat lobortis. Maecenas nec erat et ipsum placerat tempus. Nam augue nisl, malesuada non fermentum at, pellentesque sit amet nisl. Sed fringilla sit amet felis in scelerisque. Mauris sem sapien, facilisis maximus quam vitae, faucibus venenatis quam. Suspendisse at mattis velit, eu fermentum erat. Ut purus tellus, congue eu ante eget, auctor feugiat risus. Donec eu risus ultricies, finibus sem eget, feugiat urna.
+     </p>
+     <a href='#top'>맨위로 가기</a>
+     <h4 id = '#content4'>기사내용 4</h4>
+     <p>
+        Etiam elit turpis, molestie at leo in, sodales pretium lorem. Sed tristique, eros sit amet iaculis imperdiet, diam risus mattis mi, vitae ultrices arcu ligula ac est. Curabitur maximus lobortis eros dignissim auctor. Ut scelerisque massa nec sollicitudin lacinia. Integer ornare, sapien in luctus interdum, ipsum nisl eleifend metus, ut efficitur tellus quam hendrerit diam. Donec volutpat, massa vitae facilisis gravida, ligula diam mattis tellus, ac ultrices nunc metus quis mauris. Donec mi mi, elementum vel sodales in, pretium eget libero. Proin volutpat purus sollicitudin elit tempus, et consectetur nisi dignissim. Pellentesque elit lorem, maximus volutpat facilisis vel, gravida non lorem. Aliquam pharetra a neque id accumsan. Phasellus eget lacinia odio. Mauris pellentesque aliquam nisi, at egestas nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam dictum vehicula auctor. In consequat aliquet condimentum.
+     </p>
+     <a href='#top'>맨위로 가기</a>
+     
+     <h1>웹 문서에 PDF 파일 삽입하기</h1>
+     <!--data: 파일 지정, width, height : 너비, 높이 지정-->
+     <object width='800' height='700' data = 'fff.txt'></object>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

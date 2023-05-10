@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영역 관련 태그</title>
+    <style>
+        div{border: 1px solid red;}
+        span{border: 1px solid red;}
+    </style>
+</head>
+<body>
+    <!--
+        블럭요소
+            - 한 줄 단위로 영역을 차지하는 요소 (너비가 100%)
+            - 새로운 블럭 요소는 새로운 라인에 영역이 잡힌다. (두 블럭요소 간에는 겹치는 일이 없다.)
+            - p, pre, div, ...
+
+
+        인라인 요소
+            - 내용에 해당하는 부분만 영역을 차지하는 요소
+            - 줄 바꿈이 적용되지 않아 옆으로 영역이 잡힌다. (다음 줄로 넘기고자 한다면 직접 <br>을 넣어줘야 한다.)
+            - span, ...
+       
+        <div> : 블록 요소의 태그로 레이아웃 분할을 위해 사용한다.
+                줄바꿈이 적용되어 이미 존재하는 태그의 다음 줄에 영역이 설정된다. (콘텐츠가 없으면 높이 : 0, 넓이 : 100% )
+        <p>   : 블록 요소의 태그로 문단 영역을 지정하는 용도로 사용한다.
+                줄바꿈이 적용되어 이미 존재하는 태그의 다음 줄에 영역이 설정된다.
+        <span> : 인라인 요소의 태그로 콘텐츠를 감싸는 역할을 하는 태그이다.
+                 줄바꿈이 적용되지 않아 옆으로 영역이 붙는다. (콘텐츠가 없으면 높이 : none, 넚이 : none)
+    -->
+    <h1>영역 관련 태그</h1>
+    
+    <h2>div태그와 span 태그의 차이</h2>
+
+    <h3>div태그</h3>
+    <!--
+        div태그 영역은 이미 존재하는 태그 다음 줄에 영역이 설정된다.
+        (block 형식 : 공간을 수적으로 분할)
+    -->
+    <div>첫 번째 영역</div>
+    <br>
+    <div>두 번째 영역</div>
+    <br>
+    <div>세 번째 영역</div>
+    <br>
+    <div></div>
+
+    <h3> span 태그</h3>
+    <!--
+        span 태그 영역은 줄바꿈이 일어나지 않고 옆으로 영역이 설정된다.
+    -->
+    <span>첫번째영역</span>
+    <span>두번째영역</span>
+    <span>세번째영역</span>
+
+    <h2>div태그와 span태그의 차이2</h2>
+    <!--div: 사각형 박스로 영역을 지정-->
+    <div>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Nulla tortor lacus, maximus eu sollicitudin sit amet,<br>
+        ullamcorper non ex. Duis feugiat risus sed semper cursus.<br>
+        Duis eget elit eget ipsum luctus feugiat ut sit amet dui. Aliquam purus lacus, condimentum ac arcu at, volutpat ultrices purus.<br>
+        Quisque id feugiat magna. Maecenas eu metus sed mauris interdum tristique ac vel sem. Aliquam id varius nisl. Cras a nunc semper, vestibulum tortor quis, tincidunt libero. <br>
+    </div>
+    <br>
+    <span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor lacus, maximus eu sollicitudin sit amet,<br>
+        ullamcorper non ex. Duis feugiat risus sed semper cursus.<br>
+        Duis eget elit eget ipsum luctus feugiat ut sit amet dui. Aliquam purus lacus, condimentum ac arcu at, volutpat ultrices purus.<br>
+        Quisque id feugiat magna. Maecenas eu metus sed mauris interdum tristique ac vel sem. Aliquam id varius nisl. Cras a nunc semper, vestibulum tortor quis, tincidunt libero. <br>
+    </span>
+    <h2>iframe</h2>
+    <!--웹 문서 안에 다른 웹 페이지를 추가하는 태그(인라인 프레임)-->
+    <iframe src="07. 폼 관련 태그.html" frameborder="0" width="600px" height="800px"></iframe>
+</body>
+</html>

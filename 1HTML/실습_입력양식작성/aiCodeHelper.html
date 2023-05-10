@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create a form for user registration -->
+    <form onsubmit="return validateForm()">
+        <!-- Input field for email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <!-- Input field for name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <!-- Input field for date of birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        <!-- Submit button -->
+        <input type="submit" value="Register">
+    </form>
+    
+    <script>
+        function validateForm() {
+            // Retrieve input values
+            var email = document.getElementById("email").value;
+            var name = document.getElementById("name").value;
+            var dob = document.getElementById("dob").value;
+
+            // Check if email is valid
+            var emailRegex = /\S+@\S+\.\S+/;
+            if (!emailRegex.test(email)) {
+                alert("Invalid email address");
+                return false;
+            }
+
+            // Check if name is not empty
+            if (name.trim() === "") {
+                alert("Name cannot be empty");
+                return false;
+            }
+
+            // Check if date of birth is not in the future
+            var now = new Date();
+            var selectedDate = new Date(dob);
+            if (selectedDate > now) {
+                alert("Invalid date of birth");
+                return false;
+            }
+
+            // If all validations pass, return true
+            return true;
+        }
+    </script>
+</body>
+</html>
