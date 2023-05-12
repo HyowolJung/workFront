@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        p {
+            width: 500px;
+            height: 300px;
+            /*#000 검정 #lll #222 #333...
+            #999 16진수이므로 a(10)~f(16)
+            #aaa #bbb #ccc ..
+            #fff 흰색
+            */
+            background-color: #eee;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        #static {
+            /*기본값*/
+            position: static;
+        }
+
+        #relative-1 {
+            position: relative;
+        }
+
+        #relative-2 {
+            position: relative;
+            left: 100px;
+            /* 위에서 -50px 떨어지게(음수 위로 이동) */
+            top: -50px;
+        }
+
+        #fixed {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            background-color: #222;
+            /* 오른쪽에서 30px 떨어지게 */
+            right: 30px;
+            /* 위에서 30px떨어지게 */
+            top: 30px;
+        }
+        #outer{
+            position: relative;
+        }
+        #first{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+        }
+        #second{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #third{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>포지셔닝</h2>
+    css를 이용하여 여러 요소를 적절하게 배치하는 것
+    <div id="outer">
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="third"></p>
+</div>
+    <p id="static">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nisi cum saepe est? Adipisci,
+        tempore fugit sunt dolore blanditiis magnam est assumenda veritatis facere quidem eum neque ipsa corrupti?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nisi cum saepe est? Adipisci,
+        tempore fugit sunt dolore blanditiis magnam est assumenda veritatis facere quidem eum neque ipsa corrupti?
+    </p>
+    <p id="relative-1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, praesentium! Sequi, possimus? Commodi corporis
+        et laudantium quisquam voluptatem.
+        Vero laboriosam iure ducimus necessitatibus quia velit laudantium veritatis temporibus. Inventore, vitae?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, praesentium! Sequi, possimus? Commodi corporis
+        et laudantium quisquam voluptatem.
+        Vero laboriosam iure ducimus necessitatibus quia velit laudantium veritatis temporibus. Inventore, vitae?
+    </p>
+    <p id="relative-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum ab eveniet! Porro cupiditate assumenda
+        odit,
+        tenetur a alias dolorem aliquam, repellendus iste voluptatum commodi, consectetur id cumque consequatur nam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum ab eveniet! Porro cupiditate assumenda
+        odit,
+        tenetur a alias dolorem aliquam, repellendus iste voluptatum commodi, consectetur id cumque consequatur nam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Minima expedita sit vel modi beatae pariatur officia inventore itaque corrupti totam laborum, dolore atque,
+        impedit illo ad laudantium aliquam molestias? Delectus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Minima expedita sit vel modi beatae pariatur officia inventore itaque corrupti totam laborum, dolore atque,
+        impedit illo ad laudantium aliquam molestias? Delectus.
+    </p>
+    <p id="fixed">
+        Ex consectetur amet eu adipisicing laborum nisi irure proident aute adipisicing aute ea quis ipsum. Irure sunt
+        Lorem amet ullamco sit incididunt consequat sunt quis deserunt. Esse enim qui exercitation sint laborum velit
+        adipisicing adipisicing consequat ex. Officia consequat sint magna elit fugiat deserunt ipsum est. Velit
+        pariatur aliquip irure cupidatat ut aute qui.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+</body>
+
+</html>

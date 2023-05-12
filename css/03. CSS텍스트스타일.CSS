@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+#ff1 {
+    font-family: "궁서체";
+}
+
+#ff2 {
+    font-family: "굴림체";
+}
+
+/*
+    글꼴이 없는 경우를 대비해서
+    ,를 이용하여 여러 글꼴을 나열 할 수 있음
+*/
+#ff3 {
+    /* font-family: "없는 글꼴", "궁서>o<", "고딕"; */
+}
+
+/*웹 폰트*/
+h1 {
+    font-family: 'Hi Melody', cursive;
+}
+
+.web-front {
+    font-family: 'Hi Melody', cursive;
+}
+
+* {
+    font-family: 'Hi Melody', cursive;
+}
+
+#size1 {
+    font-size: 16px;
+}
+
+#size2 {
+    font-size: 2em;
+}
+
+#size3 {
+    font-size: 300%;
+}
+
+#fw1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#fw2 {
+    font-weight: lighter;
+}
+
+#fw3 {
+    font-weight: 900;
+}
+#fv{
+    /* small-caps : 소문자를 대문자로(소문자 크기의) 바꿉니다 */
+    /* normar : 바꾸지 않음 */
+    font-variant: small-caps;
+}
+#fs1{
+    font-style: italic;
+}
+
+#fs2{
+    font-style: oblique;
+}
+/*
+    글자색 변경하기
+        -색상 이름 표기법
+        -16진수 표기법
+        -rgb/rgba 표기법
+        -hsl/hsla 표기법
+*/
+
+
+#c-name{
+    /*
+    이름으로 지정 
+    웹 안전 색상(모든 웹 브라우저에서 표현할 수 있는 색상)
+    16가지 기본 색상을 포함한 총 216가지 색상
+    */
+    color: rgb(255, 0, 0);
+}
+
+#c-16{
+    /*
+        #과 16진수 6자리를 합쳐서 색상을 표현
+        앞에서 부터 2자리씩 묶어 빨강, 초록, 파랑 색사의 양을 표시
+        (중복된 숫자인 경우 3자리로 표현 #000000 -> #000)
+
+    */
+    color: rgb(243, 7, 7);
+    background-color: rgb(54, 44, 201);
+    padding: 20px;
+    font-size: 2em;
+}
+
+#c-rgb{
+    /*
+        빨강 초록 파랑의 양을 0~255까지의 수로 표현        
+    */
+    color: rgb(255, 0, 0);
+}
+
+#c-rgba{
+    /*
+        a : 투명도
+        0~1 까지
+        0: 투명, 1: 불투명
+    */
+
+    /*
+        hsl방식
+        색상(hue), 채도(saturation), 밝기(light)
+    */
+    color: rgb(255, 0, 0);
+    background-color: hsla(56, 97%, 70%, 0.699);
+}
+
+#td-none{
+    text-decoration: none;
+}
+#td-underline{
+    text-decoration: underline;
+}
+#td-overline{
+    text-decoration: overline;
+}
+#td-line-throught{
+    text-decoration: line-through;
+}
+
+li{
+    padding: 20px;
+    /*선의 두께, 선 스타일, 색상*/
+    border: 1px dotted #000;
+}
+
+a{
+
+    size: 1.5em;
+    color: #666;
+    text-decoration: none;
+}
+
+#ts1{
+    font-size: 1.5em;
+    font-weight: 900;
+    color: blueviolet;
+    text-shadow: 3px 3px 3px black;
+    background-color: red;
+}
+
+#ts2{
+    text-shadow: -3px -7px 1px black;
+    background-color: aqua;
+}
+
+#ts3{
+    text-shadow: 5px -3px 3px red;
+    color: bisque;
+}
+
+
+#tt1{
+    text-transform: none;
+}
+#tt2{
+    text-transform: capitalize;
+}
+#tt3{
+    text-transform: uppercase;
+}
+#tt4{
+    text-transform: lowercase;
+}
+
+
+.lh1{
+    font-size: 1em;
+    line-height: 1em; /*줄 간격*/
+    text-align: left; /*가로 정렬*/
+}
+.lh2{
+    font-size: 1em;
+    line-height: 2em;
+    text-align: right;
+
+}
+.lh3{
+    font-size: 1em;
+    line-height: 3em;
+    text-align: center;
+
+}
+.lh4{
+    font-size: 1em;
+    line-height: 4em;
+}
+
+table{
+    /*캡션의 위치*/
+    caption-side : bottom;
+    border: 1px solid #999;
+    border-collapse: collapse;
+
+}
+tr, td{
+    border : 1px dotted #999;
+    padding: 10px;
+
+}
