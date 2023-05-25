@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background 이미지 크기 조절</title>
+    <style>
+        #container{
+            width: 1100px;
+            margin: 50px auto;
+        }
+        .box{
+            
+            float: left;
+            border: 1px solid #222;
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            background: url(../css/bee_sad.png)no-repeat left top;
+        }
+        .box1{
+            clear: both; 
+            width: 800px; 
+            border: 1px sold red; 
+            height: 500px; 
+            background: url(../css/bee_angry.png) no-repeat left top;
+            background-size: cover; /*이미지가 작을 경우 확대해서 요소를 완전히 덮도록 표시*/
+        }        
+        #bg1{background-size: auto;} /*원래 배경 이미지 크기*/
+        #bg2{background-size: 200px;} /*가로: 200 세로: 원본에 의해 자동 계산*/
+        #bg3{background-size: contain;} /*가로 혹은 세로 빈공간이 생길 수 있음*/
+        #bg4{background-size: 100% 100%;} /*요소 너비의 100%, 요소 높이의 100%*/
+
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <div class='box' id='bg1'></div>
+        <div class='box' id='bg2'></div>
+        <div class='box' id='bg3'></div>
+        <div class='box' id='bg4'></div>
+        <div class='box' id='bg5'></div>
+        <div class='box1' id='bg6'></div>
+    </div>
+</body>
+</html>

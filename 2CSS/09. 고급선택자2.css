@@ -1,0 +1,102 @@
+/* ,를 이용하여 선택자를 나열하면 같은 스타일을 지정*/
+#actionTest{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
+
+#hoverTest{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
+
+/*사용자가 요소를 클릭하면 색상을 변경*/
+#actionTest:active{
+    background-color: green;
+}
+#hoverTest:hover{
+    background-color: green;
+}
+
+/*체크박스가 체크되면*/
+input[type=checkbox]:checked{
+    width: 20px;
+    height: 20px;
+}
+/*체크박스가 체크되면 형제요소 라벨을 선택*/
+input[type=checkbox]:checked + label{
+    background-color: red;
+    font-size: 1.5em;
+}
+#userId:focus, #userPwd:focus{
+    background-color: aqua;
+}
+
+/*사용 가능*/
+option:enabled{
+    background-color: pink;
+}
+/*사용 불가능*/
+option:disabled{
+    background-color: green;
+}
+/*사용 불가능*/
+button:disabled{
+    background-color: red;
+}
+
+/*형제 관계 중 첫번째 요소를 선택*/
+#test2 p:first-child{
+    background-color: red;
+    color: white;
+
+}
+/*형제 관계 중 마지막 요소를 선택*/
+/*first와 last는 해당 타입이 맞아야 작동함 */
+#test2 p:last-child{
+    background-color: red;
+    color: white;
+
+}
+
+#test2 p:nth-child(2){
+    background-color: orange;
+}
+/*수식을 사용하거나 수식 대신 odd(홀수), even(짝수)를 대입해 줄 수 있다.*/
+/* #test2 p:nth-child(even){
+    background-color: blue;
+} */
+#test2 p:nth-child(2n){
+    background-color: blue;
+}
+
+/* 뒤에서 몇번째 선택 */
+#test2 p:nth-last-child(4){
+    background-color: skyblue;
+}
+
+/*형제 구조 선택자*/
+/*타입이 p 인 태그 중에서 첫번째 형제*/
+#test3 p:first-of-type{
+    background-color: brown;
+}
+
+#test3 p:last-of-type{
+    background-color: orange;
+}
+
+#test3 p:nth-of-type(2n){
+    background-color: aquamarine;
+}
+
+#test3 p:nth-of-type(4){
+    background-color: skyblue;
+    color: white;
+}
+
+#test4 p:not(:nth-child(even)){
+    background-color: coral;
+}
+
+

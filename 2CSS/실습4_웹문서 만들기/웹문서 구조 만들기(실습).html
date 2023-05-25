@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹문서 구조 만들기(실습)</title>
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .wrap {
+            width: 1000px;
+            height: 700px;
+            /*큰 박스 가운데 정렬*/
+            margin: 0px auto;
+        }
+
+        .wrap header {
+            width: 100%;
+            height: 100px;
+            /* background-color: red; */
+
+        }
+
+        #header_both {
+            float: left;
+            margin-top: 20px;
+        }
+
+        #header_left {
+            width: 150px;
+            height: 100%;
+            float: left;
+            text-align: center;
+            /* border: 1px solid red; */
+        }
+
+        #header_right {
+            width: 850px;
+            height: 100px;
+            float: left;
+            /* padding-left: 200px; */
+            text-align: center;
+
+            /* border: 1px solid blue;  */
+        }
+
+        header nav {
+            width: 100%;
+            height: 30px;
+            background-color: green;
+            float: left;
+
+        }
+
+        header nav ul li {
+            padding: 0px; /*ul태그의 패딩*/
+        }
+
+        header nav ul li a {
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        header nav ul li a:hover{
+            background-color: aquamarine;
+        }
+        
+        /* main{
+            width: 100%;
+            height: 500px;
+            background-color: beige;
+            float: left;
+
+        } */
+        main #left_Side{
+            width: 250px;
+            height: 500px;
+            background-color: red;
+            float: left;
+
+        }
+        main #mainContent{
+            width: 550px;
+            height: 100%;
+            background-color: blue;
+            float: left;
+
+        }
+        main #right_Side{
+            width: 250px;
+            height: 100%;
+            background-color: green;
+            float: left;
+
+        } 
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <!--로고 영역-->
+            <div id='header_both'>
+                <div id='header_left'>
+                    <img src='images/logo.jpg' alt='로고'>
+                </div>
+                <div id='header_right'>
+                    <img src='images/mainlogo.jpg' alt='로고'>
+                </div>
+            </div>
+            <!--네비 영역-->
+            <!-- <nav>
+                <ul>
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="Profile">Profile</a></li>
+                    <li><a href="Board">Board</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                </ul>
+            </nav> -->
+        </header>
+        <div class="main">
+            <aside id='left_Side'></aside>
+            <main id='mainContent'></main>
+            <aside id='right_Side'></aside>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>

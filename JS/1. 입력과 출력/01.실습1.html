@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick='inchTocench()'>인치를 센치로 변환하기</button>
+    <div id='div1'></div>
+    <script>
+        function inchTocench(){
+            var inch = prompt('인치 입력');
+            var div3 = document.getElementById('div1');
+            var cench = inch * 2.54
+
+            div3.innerHTML = `입력한 ${inch}인치를 변환하면 ${cench}센치 입니다`;
+        }
+        
+
+    </script>
+</body>
+</html>

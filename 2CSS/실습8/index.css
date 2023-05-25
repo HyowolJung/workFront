@@ -1,0 +1,205 @@
+    * {
+      list-style: none;
+      text-decoration: none;
+      margin: 0px auto;
+      box-sizing: border-box;
+    }
+
+    #container{
+      width: 1200px;
+      height: 900px;
+    }
+
+    /*★★★★★★1. top menu★★★★★★*/
+    header {
+      float: left;
+      background-color: skyblue;
+      width: 1200px;
+      height: 100px;
+    }
+
+    header #logo{
+      width: 200px;
+      margin-left: 50px;
+      margin-top: 25px;
+    }
+
+    header #logo a {
+      display: block;
+      width: 200px;
+      height: 50px;
+    }   
+ 
+    nav #topmenu {
+      justify-content: space-between;
+      color: white;
+    }
+
+    nav #topMenu li {
+      float: left;
+      margin-left: 30px;
+      text-align: center;
+      /* color: white; */
+    }
+
+    nav #topMenu li ul li a {
+      display: none;
+      color: white;
+    }
+
+    #slideShow #slides img:nth-child(2),
+    #slideShow #slides img:nth-child(3) {
+      display: none;
+    }
+    #slideShow #slides #prev, 
+    #slideShow #slides #next{
+      display: none;
+    }
+
+    /*★★★★★★2. TAB MENU★★★★★★*/
+    #contents {
+      /* background-color: beige; */
+      display: flex;
+      width: 1200px;
+      height: 300px;
+      /* padding-top: 50px; */
+      /* margin-right: 460px; */
+    }
+
+    #contents #tabMenu {
+      /* background-color: aquamarine; */
+      width: 600px;
+    }
+
+    #contents #tabMenu input[type=radio] {
+      display: none;
+    }
+
+    #contents #tabMenu {
+      position: relative;
+    }
+
+    #contents #tabMenu label {
+      display: inline-block;
+      /* border: 2px solid blue; */
+      /* border: 1px solid black; */
+      color: gray;
+      width: 150px;
+      height: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+
+    #contents #tabMenu label:hover {
+      color: red;
+      background-color: gray;
+      font-weight: 900;
+    }
+
+    #contents #tabMenu h2 {
+      display: none;
+    }
+
+    #contents #tabMenu #notice {
+      width: 500px;
+      height: 75%;
+      margin-left: 0px;
+      padding-top: 20px;
+    }
+
+    #contents #tabMenu #gallery {
+      margin-left: 0px;
+      padding-top: 20px;
+    }
+
+    #contents #gallery li {
+      display: inline;
+    }
+
+    /* #contents #gallery ul li img {
+      width: 150px;
+    } */
+
+    #tab1~#notice {
+      display: none;
+    }
+
+    #tab2~#gallery {
+      display: none;
+    }
+
+    #tab1:checked~#notice {
+      display: block;
+    }
+
+    #tab2:checked~#gallery {
+      display: block;
+    }
+
+    /*★★★★★★3. links★★★★★★*/
+    #contents #links {
+      /* background-color: aquamarine; */
+      width: 600px;
+      float: left;
+    }
+
+    #contents #links ul>li {
+      width: 150px;
+      height: 100px;
+      float: left;
+      text-align: center;
+      margin-top: 25%;
+    }
+
+    #contents #links ul li a #quick-icon1 {
+      /* border: 2px solid red; */
+      width: 500px;
+      height: 100px;
+      background: url(images/icon-1.jpg);
+    }
+
+    #contents #links ul li a #quick-icon2 {
+      /* border: 2px solid blue; */
+      width: 500px;
+      height: 100px;
+      background: url(images/icon-2.jpg);
+    }
+
+    #contents #links ul li a #quick-icon3 {
+      /* border: 2px solid green; */
+      width: 500px;
+      height: 100px;
+      background: url(images/icon-3.jpg);
+    }
+
+    /*★★★★★★4. footer★★★★★★*/
+    footer{
+      /* background-color: aqua; */
+      width: 1200px;
+      height: 100px;
+      float: left;
+    }
+
+    footer #bottomMenu ul li{
+      display: inline-block;
+      /* background-color: bisque; */
+      width: 150px;
+      height: 50px;
+      color: gray;
+      background-color: gray;
+      text-align: center;
+    }
+
+    footer #bottomMenu ul li a{
+      color: red;
+      display: inline-block;
+    }
+  
+    footer #company p{
+      font-size: 15px;
+      color: gray;
+  
+    }
+

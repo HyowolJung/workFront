@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드레이아웃2</title>
+    <style>
+        .wrapper1{
+            display: grid;
+            /*최소값 200px, 최대값 1fr*/
+            /*화면을 꽉 채울만큼 컬럼 너비를 늘려서 표시*/
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .wrapper2{
+            display: grid;
+            /*화면을 최소 너비만큼 채워서 표시*/
+
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .item {
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        /*odd: 홀수 , even: 짝수*/
+        /* .item:nth-child(odd){
+            background-color: #bbb;
+        } */
+        .item:nth-child(even) {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h2>auto-fill/auto-fit</h2>
+    컬럼의 너비와 함께 auto-fill아니 auto-fit을 지정 하면
+    화면 너비에 따라 자동으로 컬럼의 갯수를 조절
+
+    auto-fit : 남는 공간 없이 꽉 채우기
+    auto-fill : 최소 너비까지 표시하고 남는 공간은 그대로 둠
+
+    <!--autofit-->
+    <div class="wrapper1">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi maiores dolores nam. Eveniet quaerat cupiditate architecto officia aspernatur quisquam ipsam ullam, cumque numquam omnis laborum officiis libero eum doloremque commodi.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi maiores dolores nam. Eveniet quaerat cupiditate architecto officia aspernatur quisquam ipsam ullam, cumque numquam omnis laborum officiis libero eum doloremque commodi.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi maiores dolores nam. Eveniet quaerat cupiditate architecto officia aspernatur quisquam ipsam ullam, cumque numquam omnis laborum officiis libero eum doloremque commodi.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi maiores dolores nam. Eveniet quaerat cupiditate architecto officia aspernatur quisquam ipsam ullam, cumque numquam omnis laborum officiis libero eum doloremque commodi.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi maiores dolores nam. Eveniet quaerat cupiditate architecto officia aspernatur quisquam ipsam ullam, cumque numquam omnis laborum officiis libero eum doloremque commodi.</div>
+    </div>
+    <div class="wrapper2">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime cum enim cumque amet nemo similique culpa quis harum eveniet eum repellat ad, asperiores vel ut dolores repudiandae reiciendis illum!</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime cum enim cumque amet nemo similique culpa quis harum eveniet eum repellat ad, asperiores vel ut dolores repudiandae reiciendis illum!</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime cum enim cumque amet nemo similique culpa quis harum eveniet eum repellat ad, asperiores vel ut dolores repudiandae reiciendis illum!</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime cum enim cumque amet nemo similique culpa quis harum eveniet eum repellat ad, asperiores vel ut dolores repudiandae reiciendis illum!</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime cum enim cumque amet nemo similique culpa quis harum eveniet eum repellat ad, asperiores vel ut dolores repudiandae reiciendis illum!</div>
+    </div>
+    
+</body>
+</html>

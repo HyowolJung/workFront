@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(9, 100, 160);
+}
+
+#container{
+    width: 320px;
+    margin: 50px auto;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    margin: 20px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    position: relative;
+}
+
+.words{
+    position: absolute;
+    left: 10px;
+    top: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*가로 모드*/
+@media screen and (orientation:landscape){
+    body{
+        float: left;
+    }
+    .words{
+        transform: translate(300px, 0px);
+    }
+}
+
+
+/* min-width 768px, max-width:1719px */

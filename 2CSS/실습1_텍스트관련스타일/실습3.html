@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꿀사과</title>
+    <style>
+        * {
+            margin: 0 auto;
+            /*모든 요소의 마진을 제거*/
+        }
+
+        .imgBg {
+            width: 600px;
+            height: 440px;
+            background-image: url(../css/top.jpg);
+            background-size: cover;
+            /*박스의 크기를 지정해서 영역으로 표시*/
+            /* border: 1px solid red; */
+            
+            margin: 0px auto;
+            /*부모 요소를 기준으로 자식요소를 배치
+            부모요소: 포지션이 지정되어 있는 요소*/
+            position: relative;
+        }
+
+        .imgContent {
+            width: 100%;
+            height: 170px;
+            /* border: 3px solid blue; */
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute; 
+            bottom: 0px; /*아래로부터 얼마나 떨어질지*/
+            
+        }
+
+        h1 {
+            /*브라우저 기본 속성 값을 제거*/
+            margin: 0px;
+            /* border: 1px solid yellow; */
+            font-size: 2.2em;
+            height: 60px;
+            line-height: 60px;
+            /* padding: 0px 0px 0px 50px; */
+            /*이것도 됨*/
+            padding-left: 51px;
+            /* margin-left: 50px; */
+            color: white;
+        }
+
+        p {
+            /* border: 1px solid pink; */
+            margin: 0px;
+            height: 110px;
+            padding-top: 26px;
+            padding-left: 33px;
+            font-size: 1.2em;
+            color: orange;
+            font-family: "고딕";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imgBg">
+        <div class="imgContent">
+            <h1>가정용 꿀사과</h1> <!--h1과 p 태그는 block이다-->
+            <p>흠집이 있고 약간은 못생겼지만 맛과 영양은 그대로 입니다.
+                <br>질 좋은 사과를 저렴하게 즐겨보세요.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

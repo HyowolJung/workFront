@@ -1,0 +1,71 @@
+        /* 후손 선택자*/
+        section h1 {
+            background-color: black;
+            color: white;
+        }
+
+        /*자식 선택자*/
+        section>p {
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+
+        /*인접 선택자*/
+        #div-test+div {
+            background-color: antiquewhite;
+        }
+
+        #div-test~div {
+            font-weight: 700;
+            color: #333;
+        }
+
+        #room+p {
+            background-color: #ccc;
+        }
+
+        /*속성 선택자
+        선택자[속성]
+        */
+        /*우선순위에 따라 스타일 적용 순서가 다름*/
+        /*
+            =div : div와 일치
+            ^=div : div로 시작되는
+            *=div : div를 포함하는
+            $=div : div로 끝나는
+        */
+
+        /*id 속성을 가진 요소를 선택*/
+        .div-class[id] {
+            border: 1px solid red;
+        }
+
+        /*div 중에 name 속성 값이 name1과 일치하는 태그*/
+        .div-class[id=name1] {
+            background-color: pink;
+        }
+
+        /*class 속성의 값이 div로 시작되는*/
+        .div-class[class^=div] {
+            background-color: azure;
+        }
+
+        /*id 속성의 값이 name을 포함하는*/
+        .class-div[id*=name] {
+            background-color: red;
+        }
+
+        /*class 속성의 값이 class로 끝나는*/
+        div[class$=class] {
+            background-color: darkgoldenrod;
+        }
+
+        /*div 중에 class속성에서 class로 시작되는 태그*/
+        div[class^=class] {
+            background-color: aqua;
+            color: blue;
+        }
+        /*class속성의 값에 p20이 포함되어 있는 경우(속성값이 띄어쓰기로 구분)*/
+        div[class~=p20]{
+            padding: 40px;
+        }

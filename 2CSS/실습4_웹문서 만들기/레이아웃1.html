@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃1</title>
+    <style>
+        * {
+            margin: 0;
+            /* 컨텐츠 +_패딩 + 보더를 포함 */
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 1000px;
+            height: 800px;
+
+            background-color: bisque;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            height: 120px;
+            background-color: violet;
+            background: url(images/mainlogo.jpg);
+        }
+
+        main {
+            width: 100%;
+            height: 600px;
+            background-color: skyblue;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: green;
+        }
+
+        header .logo {
+            width: 100%;
+            height: 90px;
+            background-color: pink;
+
+        }
+
+        nav {
+            width: 100%;
+            height: 30px;
+            background-color: palevioletred;
+        }
+
+        /* .wrap aside:first-child{
+            width: 120px;
+        } */
+        main aside.leftSide {
+            width: 150px;
+            height: 600px;
+            background-color: cornflowerblue;
+            float: left;
+        }
+
+        main>section {
+            width: 550px;
+            height: 600px;
+            background-color: dodgerblue;
+            float: left;
+            background-image: url(../images/bee_sad.png);
+        }
+
+        main aside.rightSide {
+            width: 300px;
+            height: 600px;
+            background-color: lightblue;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='wrap'>
+        <header>
+            <div class='logo'>헤더 영역</div>
+            <nav>내비게이션</nav>
+        </header>
+
+        <main>
+            <!--사이드바-->
+            <aside class='leftSide'>왼쪽 사이드바</aside>
+            <section>메인 영역</section>
+            <aside class='rightSide'>오른쪽 사이드바</aside>
+        </main>
+
+        <footer>푸터 영역</footer>
+    </div>
+</body>
+
+</html>

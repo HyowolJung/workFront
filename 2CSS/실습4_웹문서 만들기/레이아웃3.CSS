@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+header {
+    /* border: 1px solid red; */
+    width: 1004px;
+    height: 150px;
+
+}
+header #headerLeft{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 100%;
+    float: left;
+    background-color: red;
+}
+
+header #headerRight{
+    /* border: 1px solid red; */
+    width: 800px;
+    height: 100%;
+    float: left;
+    background-color: blue;
+}
+
+section{
+    /* border: 1px solid red; */
+    width: 1004px;
+    height: 500px;
+    float: left;
+}
+section #asideLeft{
+    /* border: 1px solid red; */
+    width: 400px;
+    height: 100%;
+    float: left;
+    background-color: blueviolet;
+}
+
+section #asideRight{
+    /* border: 1px solid red; */
+    width: 600px;
+    height: 100%;
+    float: left;
+    background-color: aqua;
+}
+
+footer{
+    /* border: 1px solid red; */
+    width: 1004px;
+    height: 200px;
+    float: left;
+    background-color: chartreuse;
+}
